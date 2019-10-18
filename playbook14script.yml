@@ -1,0 +1,20 @@
+---
+- name: Using ansible to call Python code
+  gather_facts: yes
+  hosts: localhost 
+
+  tasks:
+          - name: Call my Python script
+            script: ~/ans/scripts/parselog.py
+            args:  
+              executable: python3
+            register: results
+         
+          - name:
+                  load my yaml file that was just created
+            include_vars:
+                    name: ips
+                    file: ~/ans/files/parsed.ips
+          - debug:
+                 var: ips
+

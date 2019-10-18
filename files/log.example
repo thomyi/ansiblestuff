@@ -1,0 +1,5 @@
+ERROR 192.168.0.1 VM is stuck in ERROR mode
+WARNING MEMORY REACHING 70%
+ERROR 10.0.0.1 unexpectedly shutdown
+ERROR 172.16.8.1 no responsing to keep-alive messages
+WARNING end of log

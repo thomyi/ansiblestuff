@@ -1,0 +1,8 @@
+---
+- name: Playbook to get files via url
+  hosts: planetexpress
+  tasks:
+    - name: Download a file to remote server
+      get_url:     
+       url: http://www.clamav.net/downloads/production/clamav-0.99.3.tar.gz
+       dest: "/home/{{ ansible_user }}/clamav-0.99.3.tar.gz"

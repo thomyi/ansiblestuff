@@ -1,0 +1,32 @@
+---
+- name: bootstrapping and new user
+  hosts: raiders
+  gather_facts: False
+
+  tasks:
+
+  # install Python with ansible
+  - name: "Bootstrap python install"
+    raw: "apt install -y python3-pip"
+    become: yes
+
+  # create a new group
+  - name: Create the new group sandbox
+    group:
+      name: sandbox
+      state: present
+    become: yes
+
+  # create new user on target systems
+  - name: Add user 'exampleuser' with uid 1040 and group of 'sandbox'
+    user:
+      name: exampleuser
+      comment: "Example User"
+      # password: alta3     # pass as bash
+      state: present
+      shell: /bin/bash      # Defaults to /bin/bash
+      system: no            # Default to no
+      createhome: yes       # Defaults to yes
+      # home: /home/exampleuser # Defaults to /home/<username>
+      group: sandbox
+    become: yes

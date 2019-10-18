@@ -1,0 +1,12 @@
+---
+- name: learning about apt
+  hosts: raiders
+  gather_facts: yes
+
+  tasks:
+          - name: install steamlocomotive
+            apt:  
+                    name: sl
+                    state: absent
+            become: yes
+

@@ -1,0 +1,8 @@
+---
+- name: Playbook for running copy to a specific set of boxes
+  hosts: planetexpress:!bender
+  tasks:
+    - name: Copy from the controller
+      copy:
+        src: ~/ans/files/fryresume.txt
+        dest: "/home/{{ ansible_user }}/fryresume.txt" 

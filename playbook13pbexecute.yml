@@ -1,0 +1,21 @@
+---
+- name: understanding playbook execution
+  gather_facts: yes
+  hosts: example
+
+  pretasks:
+        ## I execute first
+        #then any handlers c:lled will execute
+    - name: call my py script that normalizes data used for the role
+      script:
+              ## call python script that reads from excel, csv, email
+  roles:
+        ##
+
+  tasks: 
+
+  posttasks:
+
+  handlers:
+          # 1) runs after pre-tasks
+          # 2) runs after posttasks

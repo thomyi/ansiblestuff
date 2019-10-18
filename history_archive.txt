@@ -1,0 +1,481 @@
+    1  cd ~
+    2  wget https://alta3.com/static/projects/ansible/max_teardown.sh
+    3  bash max_teardown.sh
+    4  wget https://alta3.com/static/projects/ansible/ssh101/setup.sh-0 ssh-setup.sh
+    5  clear
+    6  mkdir -p ~/ans/inv/dev/
+    7  cd ans/
+    8  ansible --version
+    9  ansible config-dump
+   10  ansible-config -dump
+   11  vim ~/ans/inv/dev/
+   12  vim ~/ans/inv/dev/jones
+   13  ls -altrh
+   14  vim ~/ans/inv/dev/jones
+   15  wget https://alta3.com/static/projects/ansible/deploy/max-teardown.sh
+   16  wget https://alta3.com/static/projects/ansible/deploy/indy-setup.sh
+   17  clear
+   18  bash indy-setup.sh
+   19  ssh indy@10.10.2.2
+   20  pwd
+   21  python3 --version
+   22  sudo apt remove python* -y
+   23  sudo apt install -y python3
+   24  clear
+   25  ansible raider -i ~/ans/inv/dev/jones -m ping
+   26  ls -altrh
+   27  sudo apt install -y python3-pip -y
+   28  ansible raider -i ~/ans/inv/dev/jones -m ping
+   29  vim ~/ans/inv/dev/jones
+   30  ansible raiders -i ~/ans/inv/dev/jones -m ping
+   31  vim playbook01raw.yml
+   32  ssh indy@10.10.2.2
+   33  ansible-playbook playbook01raw.yml -i ~/ans/inv/dev/jones
+   34  ssh indy@10.10.2.2
+   35  pwd
+   36  ls -altr
+   37  cd inv/
+   38  ls -altrh
+   39  cd dev/
+   40  ls -altrh
+   41  cd ..
+   42  vim ~/ans/inv/dev/jones
+   43  ls
+   44  ansible-playbook playbook01raw.yml -i ~/ans/inv/dev/jones
+   45  vim playbook01raw.yml 
+   46  ansible-playbook playbook01raw.yml -i ~/ans/inv/dev/jones
+   47  vim playbook02apt.yml
+   48  ansible-playbook playbook02apt.yml -i inv/dev/jones 
+   49  vim playbook02apt.yml
+   50  ansible-playbook playbook02apt.yml -i inv/dev/jones 
+   51  ssh indy@10.10.2.2
+   52  cp -p playbook02apt.yml playbook03aptundo.yml
+   53  vim playbook03aptundo.yml 
+   54  ansible-playbook playbook03aptundo.yml -i inv/dev/jones 
+   55  ssh indy@10.10.2.2
+   56  vim playbook03aptundo.yml 
+   57  ansible-playbook playbook03aptundo.yml -i inv/dev/jones 
+   58  ssh indy@10.10.2.2
+   59  mv playbook03aptundo.yml playbook02aptundo.yml 
+   60  ls -altrh
+   61  cd 
+   62  bash max_teardown.sh 
+   63  wget https://alta3.com/static/projects/ansible/deploy/pexpress-setup.sh
+   64  bash pexpress-setup.sh 
+   65  ls -altrh
+   66  cd ans/
+   67  ls -altrh
+   68  vim inv/dev/hosts
+   69  ls -altrh
+   70  vim playbook03yumapt.yml
+   71  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+   72  vim playbook03yumapt.yml
+   73  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+   74  vim playbook03yumapt.yml
+   75  ansible planetexpress -i inv/dev/hosts -m setup
+   76  vim playbook03yumapt.yml
+   77  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+   78  vim playbook03yumapt.yml
+   79  vim inv/dev/hosts 
+   80  vim playbook03yumapt.yml
+   81  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+   82  ping farnsworth
+   83  vim inv/dev/hosts 
+   84  ssh 10.10.2.6
+   85  vim inv/dev/hosts 
+   86  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+   87  vim inv/dev/hosts 
+   88  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+   89  ls -altrh
+   90  vim ansible.cfg
+   91  ansible-config dump
+   92  la
+   93  ls -altrh
+   94  vim playbook0vim adf
+   95  vim i
+   96  pwd
+   97  vim i
+   98  clear
+   99  vim :1ccccc
+  100  vim ps -ef
+  101  clear
+  102  cd ans/
+  103  ls -altrh
+  104  vim playbook03yumapt.yml 
+  105  ansible-playbook playbook03yumapt.yml -i inv/dev/hosts 
+  106  vim playbook03yumapt.yml 
+  107  cd ~
+  108  wget https://alta3.com/static/projects/ansible/max_teardown.sh
+  109  bash max_teardown.sh
+  110  wget https://alta3.com/static/projects/ansible/modules/setup.sh -0 modsetup.sh
+  111  wget https://alta3.com/static/projects/ansible/modules/setup.sh -O modsetup.sh
+  112  bash mod-setup.sh
+  113  ls -altrh
+  114  bash modsetup.sh 
+  115  ping -c 10.10.2.3
+  116  ping -c 1 10.10.2.3
+  117  ping -c 1 10.10.2.4
+  118  ping -c 1 10.10.2.5
+  119  ping -c 1 10.10.2.6
+  120  ls -altrh
+  121  ls -al ~/ans/inv/dev/
+  122  vim ~/ans/inv/dev/
+  123  vim ~/ans/inv/dev/hosts
+  124  vim ~/ans/playbookcmd.yml
+  125  ansible-playbook ~/ans/playbookcmd.yml 
+  126  vim ~/.ansible.cfg
+  127  cd ~/.
+  128  pwd
+  129  cd ~/ans/
+  130  ls -altrh
+  131  vi ansible.cfg 
+  132  ansible-playbook ~/ans/playbookcmd.yml 
+  133  cd ~
+  134  bash max_teardown.sh
+  135  wget https://alta3.com/static/projects/ansible/d2/d2-setup.sh
+  136  bash d2-setup.sh 
+  137  ping -c 10.10.2.2
+  138  ping -c 1 10.10.2.2
+  139  ssh indy@10.10.2.2
+  140  vim ~/ans/inv/dev/jones 
+  141  vim ~/ans/bootstrap-new-user.yml
+  142  mkpasswd --method=sha-512
+  143  sudo apt-get install -y whois
+  144  mkpasswd --method=sha-512
+  145  ansible-playbook ~/ans/bootstrap-new-user.yml -i ~/ans/inv/dev/jones 
+  146  vim ~/ans/bootstrap-new-user.yml
+  147  ansible-playbook ~/ans/bootstrap-new-user.yml -i ~/ans/inv/dev/jones 
+  148  ssh indy@10.10.2.2
+  149  vim remove-new-user.yml
+  150  ansible-playbook ~/ans/remove-new-user.yml -i ~/ans/inv/dev/jones
+  151  ls -altrh
+  152  mv remove-new-user.yml ans/
+  153  cd ans/
+  154  ls -altrh
+  155  ansible-playbook remove-new-user.yml -i ~/ans/inv/dev/jones 
+  156  vim remove-new-user.yml
+  157  ansible-playbook remove-new-user.yml -i ~/ans/inv/dev/jones 
+  158  vim remove-new-user.yml
+  159  ssh indy@10.10.2.2
+  160  cd ..
+  161  ls -altrh
+  162  bash max_teardown.sh
+  163  exit
+  164  cd ~
+  165  bash max_teardown.sh
+  166  wget https://alta3.com/static/projects/ansible/d2/d2-setup.sh
+  167  bash d2-setup.sh
+  168  ping -c 1 10.10.2.2
+  169  ssh indy@10.10.2.2
+  170  cat ~/ans/inv/dev/jones 
+  171  vim ~/ans/bootstrap-new-user.yml
+  172  cd ~/ans/
+  173  ls -altrh
+  174  vim ~/ans/bootstrap-new-user.yml
+  175  ansible-playbook ~/ans/bootstrap-new-user.yml -i ~/ans/inv/dev/jones 
+  176  ssh indy@10.10.2.2
+  177  vim ~/bootstrap-and-apt.yml
+  178  ls -altrh
+  179  vim playbook03yumapt.yml 
+  180  vim bootstrap-and-apt.yml
+  181  vim looperlab.yml
+  182  exit
+  183  cd ans/
+  184  ls -altrh
+  185  mv looperlab.yml playbook04loop.yml
+  186  vim playbook04loop.yml 
+  187  ansible-playbook playbook04loop.yml 
+  188  vim playbook04loop.yml 
+  189  ansible-playbook playbook04loop.yml 
+  190  vim playbook04loop.yml 
+  191  ansible-playbook playbook04loop.yml 
+  192  vim playbook04loop.yml 
+  193  ansible-playbook playbook04loop.yml 
+  194  vim playbook04loop.yml 
+  195  ansible-playbook playbook04loop.yml 
+  196  vim playbook04loop.yml 
+  197  ansible-playbook playbook04loop.yml 
+  198  vim playbook04loop.yml 
+  199  ansible-playbook playbook04loop.yml 
+  200  vim playbook04loop.yml 
+  201  ansible-playbook playbook04loop.yml 
+  202  cp -p playbook04loop.yml playbook04loop2.yml 
+  203  vim playbook04loop2.yml 
+  204  vim playbook05moreloop.yml
+  205  cp -p playbook05moreloop.yml ~/ans/vars/yummysnacks.yml
+  206  mkdir vars
+  207  cd vars/
+  208  vim yummysnacks.yml
+  209  cd ..
+  210  ansible-playbook playbook05moreloop.yml 
+  211  vim playbook05moreloop.yml
+  212  ansible-playbook playbook05moreloop.yml 
+  213  vim playbook05moreloop.yml
+  214  ansible-playbook playbook05moreloop.yml 
+  215  ls -altr vars/
+  216  vim playbook05moreloop.yml
+  217  ansible-playbook playbook05moreloop.yml 
+  218  vim playbook05moreloop.ymlc
+  219  ansible-playbook playbook05moreloop.yml 
+  220  vim playbook05moreloop.yml
+  221  ansible-playbook playbook05moreloop.yml 
+  222  vim playbook05moreloop.yml
+  223  ansible-playbook playbook05moreloop.yml 
+  224  vim playbook-dictrecall101.yml
+  225  ansible-playbook ~/ans/playbook-dictrecall101.yml 
+  226  vim playbook-yml-tf01.yml
+  227  ansible-playbook ~/ans/playbook-yml-tf01.yml -i ~/ans/inv/dev/
+  228  ifconfig
+  229  clear
+  230  ansible-playbook ~/ans/playbook-yml-tf01.yml -i ~/ans/inv/dev/
+  231  history
+  232  clear
+  233  ansible-playbook ~/ans/playbook-yml-tf01.yml -i ~/ans/inv/dev/
+  234  ls -altrh
+  235  mkdir files/
+  236  cd files/
+  237  vim fryresume.txt
+  238  cd ..
+  239  vim playbook08copy.yml
+  240  cat ~/ans/inv/dev/hosts 
+  241  cd files/
+  242  pwd
+  243  cd ..
+  244  vim playbook08copy.yml
+  245  ansible-playbook playbook08copy.yml 
+  246  ssh fry
+  247  cat ~/ans/inv/dev/hosts 
+  248  ssh bender
+  249  vim ansible.cfg 
+  250  cat ansible.cfg 
+  251  vim ansible.cfg 
+  252  vim playbook08copy.yml
+  253  ansible-playbook playbook08copy.yml 
+  254  ssh 10.10.2.4
+  255  ssh fry@10.10.2.4
+  256  ping 10.10.2.4
+  257  ls -altrh
+  258  cd ..
+  259  cd ~
+  260  ls -altrh
+  261  bash modsetup.sh 
+  262  bash max_teardown.sh
+  263  bash modsetup.sh 
+  264  cd ~ans
+  265  cd ~/ans
+  266  ls -altrh
+  267  cp -p playbook08copy.yml playbook08delete.yml
+  268  ls -altrh
+  269  ansible-playbook playbook08copy.yml 
+  270  vim playbook08delete.yml 
+  271  ansible-playbook playbook08delete.yml 
+  272  ls -altrh
+  273  cp -p playbook08copy.yml playbook-module-get_url.yml
+  274  vi playbook-module-get_url.yml 
+  275  ls -altrh
+  276  vi playbook-module-get_url.yml 
+  277  ansible-playbook playbook-module-get_url.yml 
+  278  vim playbook-module-get_url.yml 
+  279  ansible-playbook playbook-module-get_url.yml 
+  280  vim playbook10findafile.yml
+  281  ansible-playbook playbook10findafile.yml 
+  282  vim playbook10findafile.yml
+  283  ansible-playbook playbook10findafile.yml 
+  284  vim playbook10findafile.yml
+  285  ansible-playbook playbook10findafile.yml 
+  286  vim playbook10findafile.yml
+  287  cat inv/dev/hosts 
+  288  ssh bender@10.10.2.3
+  289  vim playbook10findafile.yml
+  290  vim playbook10findafile.yml
+  291  ansible-playbook playbook10findafile.yml 
+  292  vim playbook10findafile.yml
+  293  clear
+  294  vim playbook10findafile.yml
+  295  ansible-playbook playbook10findafile.yml 
+  296  vim playbook10findafile.yml
+  297  ansible-playbook playbook10findafile.yml 
+  298  vim playbook10findafile.yml
+  299  ansible-playbook playbook10findafile.yml 
+  300  vim playbook10findafile.yml
+  301  ansible-playbook playbook10findafile.yml 
+  302  ls -altrh
+  303  cd ..
+  304  ls -altrh
+  305  cd searchresults/
+  306  ls -altrh
+  307  cd ../ans/
+  308  ls -altrh
+  309  vim playbook10findafile.yml
+  310  ansible-playbook playbook10findafile.yml 
+  311  ls -altr ../searchresults/
+  312  ls -altr ../searchresults/bender/
+  313  ls -altr ../searchresults/bender/home/
+  314  ls -altr ../searchresults/bender/home/bender/
+  315  ls -altr ../searchresults/*/*/*
+  316  vim playbook10findafile.yml
+  317  ansible-playbook playbook10findafile.yml 
+  318  ls -altr ../searchresults
+  319  ls -altr ../searchresults/*/*/*
+  320  vim playbook10findafile.yml
+  321  cd 
+  322  ls 
+  323  rm -rf searchresults/
+  324  ls -altrh
+  325  cd ans/
+  326  ls -altrh
+  327  ansible-playbook playbook10findafile.yml 
+  328  vim playbook10findafile.yml
+  329  ansible-playbook playbook10findafile.yml 
+  330  vim playbook10findafile.yml
+  331  ansible-playbook playbook10findafile.yml 
+  332  cat inv/dev/hosts 
+  333  ssh fry@10.10.2.4
+  334  ssh zoidberg@10.10.2.6
+  335  ssh farnsworth@10.10.2.6
+  336  ssh bender@10.10.2.2
+  337  ssh bender@10.10.2.3
+  338  ls -altrh
+  339  ansible-galaxy init todd.findafile
+  340  ls -altrh
+  341  mkdir roles
+  342  mv todd.findafile/ roles/
+  343  ls -altrh
+  344  ansible-playbook playbook10findafile.yml 
+  345  cd roles/
+  346  sudo apt install tree
+  347  tree
+  348  cp ~/ans/playbook10findafile.yml todd.findafile/tasks/main.yml 
+  349  ls -altrh
+  350  cd todd.findafile/
+  351  ls -altrh
+  352  cd ..
+  353  clear
+  354  ls -altr todd.findafile/
+  355  ls -altr todd.findafile/tasks/
+  356  cat todd.findafile/tasks/main.yml 
+  357  vim todd.findafile/tasks/main.yml 
+  358  vim todd.findafile/vars/main.yml 
+  359  cp ~/ans/playbook10findafile.yml todd.findafile/vars/main.yml 
+  360  vim todd.findafile/vars/main.yml 
+  361  cd todd.findafile/
+  362  ls -altrh
+  363  rm -rf defaults/
+  364  rm -rf files/
+  365  rm -rf handlers/
+  366  rm -rf templates/
+  367  ls -altrh
+  368  cd ~/ans/
+  369  ls -altrh
+  370  vim playbook11toddrole.yml
+  371  ansible-playbook playbook11toddrole.yml 
+  372  vim playbook11toddrole.yml
+  373  ansible-playbook playbook11toddrole.yml 
+  374  vim playbook10findafile.yml
+  375  ls -altr ../
+  376  ls -altr ../searchresults/
+  377  mkdir templates
+  378  cd templates/
+  379  ls
+  380  vim ship.cfg.j2
+  381  vim playbook12templates.yml
+  382  ls -altrh
+  383  ansibile-playbook12templates.yml
+  384  mv playbook12templates.yml ../
+  385  cd ..
+  386  ls -altrh
+  387  ansible-playbook playbook12templates.yml 
+  388  cat ~/ans/inv/dev/hosts 
+  389  vim playbook12templates.yml 
+  390  ssh fry@10.10.2.4
+  391  vim/inv/dev/hosts
+  392  vim ~/inv/dev/hosts
+  393  vim inv/dev/hosts 
+  394  vim playbook12templates.yml 
+  395  ansibile-playbook12templates.yml
+  396  ansible-playbook playbook12templates.yml 
+  397  vim inv/dev/hosts 
+  398  ansible-playbook playbook12templates.yml 
+  399  exit
+  400  cd ~/ans
+  401  ls -altrh
+  402  vim playbook13pbexecute.yml
+  403  vim playbook14script.yml
+  404  ls -
+  405  ls -altr
+  406  vim files/log.example
+  407  mkdir scripts
+  408  vim scripts/parselog.py
+  409  python3 scripts/parselog.py 
+  410  vim scripts/parselog.py
+  411  python3 scripts/parselog.py 
+  412  vim scripts/parselog.py
+  413  python3 scripts/parselog.py 
+  414  vim scripts/parselog.py
+  415  clear
+  416  chmod u+x scripts/parselog.py 
+  417  vim scripts/parselog.py 
+  418  vim playbook14script.yml 
+  419  ansible-playbook playbook14script.yml 
+  420  vim scripts/parselog.py 
+  421  ansible-playbook playbook14script.yml 
+  422  python3 scripts/parselog.py 
+  423  vim scripts/parselog.py 
+  424  python3 scripts/parselog.py 
+  425  ansible-playbook playbook14script.yml 
+  426  python3 scripts/parselog.py 
+  427  vim scripts/parselog.py 
+  428  python3 scripts/parselog.py 
+  429  vim scripts/parselog.py 
+  430  python3 scripts/parselog.py 
+  431  vim scripts/parselog.py 
+  432  pip install pyyaml
+  433  vim scripts/parselog.py 
+  434  python3 scripts/parselog.py 
+  435  cat files/parsed.ips 
+  436  vim scripts/parselog.py 
+  437  ansible-playbook playbook14script.yml 
+  438  vim playbook14script.yml 
+  439  ansible-playbook playbook14script.yml 
+  440  vim playbook14script.yml 
+  441  ansible-playbook playbook14script.yml 
+  442  vim playbook14script.yml 
+  443  ansible-playbook playbook14script.yml 
+  444  vim playbook14script.yml 
+  445  ansible-playbook playbook14script.yml 
+  446  vim playbook15.yml
+  447  ansible-playbook playbook15.yml 
+  448  vim playbook15.yml
+  449  ansible-playbook playbook15.yml 
+  450  ls -altrh
+  451  ssh bender@10.10.2.3
+  452  ls
+  453  vim playbook15.yml 
+  454  ansible-playbook playbook15.yml 
+  455  #git init
+  456  #get add *
+  457  git commit -m "20191017
+  458  #git config user.email "thomasyi@gmail.com"
+  459  #git config user.name "yitho"
+  460  ping www.google.com
+  461  git push https://github.com/thomyi/ansiblestuff master
+  462  git push https://github.com/thomyi/ansiblestuff.git master
+  463  git init
+  464  git config user.email "thomasyi@gmail.com"
+  465  git config user.name "thomyi"
+  466  git push https://github.com/thomyi/ansiblestuff.git master
+  467  git push https://github.com/thomyi/ansiblestuff master
+  468  sudo apt install build-essential libssl-dev libffi-dev python-dev
+  469  mkdir library
+  470  cd library/
+  471  vim mymodule.py
+  472  cd ..
+  473  git init
+  474  git add *
+  475  git config user.email "thomasyi@gmail.com"
+  476  git push https://github.com/thomyi/ansiblestuff
+  477  git push https://github.com/thomyi/ansiblestuff master
+  478  git add *
+  479  git commit -m "Thomas commit for day 5"
+  480  git push https://github.com/thomyi/ansiblestuff master
+  481  history > history_archive.txt
